@@ -52,6 +52,30 @@ h2 {
   font-size: 1.1rem;
 }
 
+.best-score {
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.new-best {
+  color: var(--correct);
+  font-size: 1.2rem;
+  font-weight: 700;
+  animation: celebrate 700ms ease-in-out;
+}
+
+@keyframes celebrate {
+  50% {
+    transform: scale(1.08);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .new-best {
+    animation: none;
+  }
+}
+
 .muted {
   color: var(--muted);
   margin: 0;
